@@ -9,13 +9,15 @@ A full-stack web application for managing a hostel/dormitory. The system covers 
 
 ## Team Members
 
-| Name | Student ID |
-|------|------------|
-| (Member 1) | |
-| (Member 2) | |
-| (Member 3) | |
+| Name                               |   Student ID   |
+|------------------------------------|----------------|
+| Kulchaya Paipinij                  | 67070503406    |
+| Chayanit Kuntanarumitkul           | 67070503408    |
+| Thanaphon Rachatakulpong           | 67070503417    |
+| Tana Udompornkul                   | 67070503418    |
+| Pattarawadee Thanapoomthakul       | 67070503435    |
+| Siripitch Chaiyabutra              | 67070503440    |
 
-> *(Please fill in your names and student IDs before submitting.)*
 
 ---
 
