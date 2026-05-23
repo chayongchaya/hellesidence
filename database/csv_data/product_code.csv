@@ -1,0 +1,9 @@
+product_code,product_name,product_type,default_unit_price
+CLEAN01,Cleaning Fee,Utility,200
+ELEC01,Electricity,Utility,3.5
+FINE01,Late Payment Fine,Fine,500
+FINE02,Damage Fine,Fine,200
+INET01,Internet (Monthly),Utility,440
+MAINT01,Maintenance Charge,Maintenance,500
+RENT01,Monthly Rent,Rent,4500
+WATER01,Water,Utility,80

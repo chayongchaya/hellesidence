@@ -1,0 +1,16 @@
+tenant_id,name,phone,email,address,id_card_no
+1,Somchai Jaidee,081-234-5678,somchai@email.com,"45 Moo 3, Nonthaburi 11000",1100100012345
+2,Malee Srisuk,082-345-6789,malee@email.com,"22 Ladprao Rd, Bangkok 10230",1100100023456
+3,Napat Thongdee,083-456-7890,napat@email.com,"8 Chaengwattana, Nonthaburi 11120",1100100034567
+4,Pimchanok Rakdee,084-567-8901,pimchanok@email.com,"100 Ratchadaphisek, Bangkok 10310",1100100045678
+5,Krit Panya,085-678-9012,krit@email.com,"77 Phahon Yothin, Bangkok 10900",1100100056789
+6,Wanchai Boonmee,086-789-0123,wanchai@email.com,"31 Silom Rd, Bangkok 10500",1100100067890
+7,Sirinapa Chaiyakul,087-890-1234,sirinapa@email.com,"15 On Nut Rd, Bangkok 10250",1100100078901
+8,Thanida Somboon,088-901-2345,thanida@email.com,"60 Bangna-Trad Rd, Bangkok 10260",1100100089012
+9,Rattana Phonsri,089-012-3456,rattana@email.com,"3 Sathorn Rd, Bangkok 10120",1100100090123
+10,Pasit Lorprasert,081-123-4567,pasit@email.com,"19 Minburi, Bangkok 10510",1100100101234
+11,Busaba Wongsa,082-234-5678,busaba@email.com,"55 Thonburi, Bangkok 10600",1100100112345
+12,Chartchai Intawong,083-345-6789,chartchai@email.com,"28 Phra Khanong, Bangkok 10260",1100100123456
+13,Duangjai Keawkla,084-456-7890,duangjai@email.com,"14 Ramkhamhaeng, Bangkok 10240",1100100134567
+14,Ekkachai Phromma,085-567-8901,ekkachai@email.com,"37 Wang Thonglang, Bangkok 10310",1100100145678
+15,Fah Chantawong,086-678-9012,fah@email.com,"9 Ratchayothin, Bangkok 10900",1100100156789

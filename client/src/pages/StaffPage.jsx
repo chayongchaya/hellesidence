@@ -1,0 +1,130 @@
+import { useEffect, useState } from 'react'
+import { api } from '../services/http'
+import { toast } from 'react-toastify'
+import ConfirmDialog from '../components/ConfirmDialog'
+import { validatePhone, validateRequired, formatPhoneInput, stripFormatting } from '../utils/validation'
+
+const EMPTY = { name: '', position: '', phone: '' }
+
+function FieldError({ msg }) {
+  if (!msg) return null
+  return <span style={{ color: '#e53e3e', fontSize: 11, marginTop: 3, display: 'block' }}>⚠ {msg}</span>
+}
+
+export default function StaffPage() {
+  const [rows, setRows] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [showForm, setShowForm] = useState(false)
+  const [editing, setEditing] = useState(null)
+  const [form, setForm] = useState(EMPTY)
+  const [errors, setErrors] = useState({})
+  const [confirm, setConfirm] = useState(null)
+
+  const load = () => { setLoading(true); api.get('/api/v1/staff').then(setRows).finally(() => setLoading(false)) }
+  useEffect(load, [])
+
+  const open = (row = null) => { setEditing(row); setForm(row ? { ...row } : EMPTY); setErrors({}); setShowForm(true) }
+
+  const handleChange = e => {
+    const { name, value } = e.target
+    const finalValue = name === 'phone' ? formatPhoneInput(value) : value
+    setForm(f => ({ ...f, [name]: finalValue }))
+    if (errors[name]) setErrors(prev => ({ ...prev, [name]: null }))
+  }
+
+  const validate = () => {
+    const errs = {}
+    errs.name = validateRequired(form.name, 'Full Name')
+    errs.position = validateRequired(form.position, 'Position')
+    errs.phone = validatePhone(form.phone)
+    Object.keys(errs).forEach(k => { if (!errs[k]) delete errs[k] })
+    return errs
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    const errs = validate()
+    if (Object.keys(errs).length > 0) { setErrors(errs); toast.error('Please fix the errors before submitting'); return }
+    const payload = { ...form, phone: stripFormatting(form.phone) }
+    try {
+      if (editing) await api.put(`/api/v1/staff/${editing.staff_id}`, payload)
+      else await api.post('/api/v1/staff', payload)
+      toast.success('Saved!'); setShowForm(false); load()
+    } catch (err) { toast.error(err.message) }
+  }
+
+  const handleDelete = async id => {
+    try { await api.delete(`/api/v1/staff/${id}`); toast.success('Deleted'); setConfirm(null); load() }
+    catch (err) { toast.error(err.message) }
+  }
+
+  return (
+    <>
+      <div className="topbar"><h1>👔 Staff</h1></div>
+      <div className="page-content">
+        <div className="page-header"><h2>Staff Management</h2><button className="btn btn-primary" onClick={() => open()}>+ Add Staff</button></div>
+        <div className="card mb-0"><div className="tbl-wrap">
+          {loading ? <div className="loading">Loading…</div> :
+            <table>
+              <thead><tr><th>ID</th><th>Name</th><th>Position</th><th>Phone</th><th>Actions</th></tr></thead>
+              <tbody>
+                {rows.map(r => (
+                  <tr key={r.staff_id}>
+                    <td>S{String(r.staff_id).padStart(3, '0')}</td>
+                    <td><strong>{r.name}</strong></td>
+                    <td>{r.position}</td>
+                    <td>{r.phone}</td>
+                    <td><div className="tbl-actions">
+                      <button className="btn btn-outline btn-sm" onClick={() => open(r)}>Edit</button>
+                      <button className="btn btn-danger btn-sm" onClick={() => setConfirm(r.staff_id)}>Del</button>
+                    </div></td>
+                  </tr>
+                ))}
+                {!rows.length && <tr><td colSpan={6}><div className="empty-state"><div className="icon">👔</div><p>No staff</p></div></td></tr>}
+              </tbody>
+            </table>}
+        </div></div>
+      </div>
+
+      {showForm && (
+        <div className="modal-overlay"><div className="modal" style={{ maxWidth: 500 }}>
+          <div className="modal-header"><h2>{editing ? 'Edit Staff' : 'New Staff'}</h2>
+            <button className="btn btn-ghost btn-sm" style={{ color: '#fff' }} onClick={() => setShowForm(false)}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+            </button>
+          </div>
+          <form onSubmit={handleSubmit} noValidate>
+            <div className="modal-body"><div className="form-grid">
+              <div className="form-group full">
+                <label>Full Name *</label>
+                <input name="name" value={form.name} onChange={handleChange} placeholder="e.g. Jane Smith"
+                  style={errors.name ? { borderColor: '#e53e3e' } : {}} />
+                <FieldError msg={errors.name} />
+              </div>
+              <div className="form-group">
+                <label>Position *</label>
+                <input name="position" value={form.position} onChange={handleChange} placeholder="e.g. Housekeeper, Security"
+                  style={errors.position ? { borderColor: '#e53e3e' } : {}} />
+                <FieldError msg={errors.position} />
+              </div>
+              <div className="form-group">
+                <label>Phone * <small style={{ fontWeight: 400, color: 'var(--text-light)' }}>(10 digits)</small></label>
+                <input name="phone" value={form.phone} onChange={handleChange}
+                  placeholder="081-234-5678" maxLength={12}
+                  style={errors.phone ? { borderColor: '#e53e3e' } : {}} />
+                <FieldError msg={errors.phone} />
+              </div>
+            </div></div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-ghost" onClick={() => setShowForm(false)}>Cancel</button>
+              <button type="submit" className="btn btn-primary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 5, verticalAlign: 'middle' }}><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" /><polyline points="17 21 17 13 7 13 7 21" /><polyline points="7 3 7 8 15 8" /></svg> Save
+              </button>
+            </div>
+          </form>
+        </div></div>
+      )}
+      {confirm && <ConfirmDialog onConfirm={() => handleDelete(confirm)} onCancel={() => setConfirm(null)} />}
+    </>
+  )
+}

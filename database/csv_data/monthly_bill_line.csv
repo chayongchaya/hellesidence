@@ -1,0 +1,122 @@
+bill_line_id,bill_no,product_code,description,quantity,unit_price,amount,notes
+1,1,RENT01,Monthly Rent 2026-01,1,4500,4500,
+2,1,ELEC01,Electricity 120 units,120,3.5,420,Meter 1100→1220
+3,1,WATER01,Water 5 units,5,80,400,
+4,1,INET01,Internet (Fixed Monthly),1,440,440,
+5,2,RENT01,Monthly Rent 2026-01,1,4500,4500,
+6,2,ELEC01,Electricity 120 units,120,3.5,420,Meter 800→920
+7,2,WATER01,Water 4 units,4,80,320,
+8,2,INET01,Internet (Fixed Monthly),1,440,440,
+9,3,RENT01,Monthly Rent 2026-01,1,6000,6000,
+10,3,ELEC01,Electricity 160 units,160,3.5,560,Meter 2000→2160
+11,3,WATER01,Water 7 units,7,80,560,
+12,3,INET01,Internet (Fixed Monthly),1,440,440,
+13,4,RENT01,Monthly Rent 2026-01,1,6000,6000,
+14,4,ELEC01,Electricity 140 units,140,3.5,490,Meter 1500→1640
+15,4,WATER01,Water 6 units,6,80,480,
+16,4,INET01,Internet (Fixed Monthly),1,440,440,
+17,5,RENT01,Monthly Rent 2026-01,1,6000,6000,
+18,5,ELEC01,Electricity 140 units,140,3.5,490,Meter 1200→1340
+19,5,WATER01,Water 6 units,6,80,480,
+20,5,INET01,Internet (Fixed Monthly),1,440,440,
+21,6,RENT01,Monthly Rent 2026-01,1,8500,8500,
+22,6,ELEC01,Electricity 200 units,200,3.5,700,Meter 3000→3200
+23,6,WATER01,Water 9 units,9,80,720,
+24,6,INET01,Internet (Fixed Monthly),1,440,440,
+25,7,RENT01,Monthly Rent 2026-02,1,4500,4500,
+26,7,ELEC01,Electricity 100 units,100,3.5,350,Meter 1220→1320
+27,7,WATER01,Water 5 units,5,80,400,
+28,7,INET01,Internet (Fixed Monthly),1,440,440,
+29,8,RENT01,Monthly Rent 2026-02,1,4500,4500,
+30,8,ELEC01,Electricity 100 units,100,3.5,350,Meter 920→1020
+31,8,WATER01,Water 4 units,4,80,320,
+32,8,INET01,Internet (Fixed Monthly),1,440,440,
+33,9,RENT01,Monthly Rent 2026-02,1,6000,6000,
+34,9,ELEC01,Electricity 140 units,140,3.5,490,Meter 2160→2300
+35,9,WATER01,Water 7 units,7,80,560,
+36,9,INET01,Internet (Fixed Monthly),1,440,440,
+37,9,FINE01,Late Payment Fine,1,500,500,Overdue from 2026-01
+38,10,RENT01,Monthly Rent 2026-02,1,6000,6000,
+39,10,ELEC01,Electricity 140 units,140,3.5,490,Meter 1640→1780
+40,10,WATER01,Water 6 units,6,80,480,
+41,10,INET01,Internet (Fixed Monthly),1,440,440,
+42,11,RENT01,Monthly Rent 2026-02,1,6000,6000,
+43,11,ELEC01,Electricity 140 units,140,3.5,490,Meter 1340→1480
+44,11,WATER01,Water 6 units,6,80,480,
+45,11,INET01,Internet (Fixed Monthly),1,440,440,
+46,11,FINE01,Late Payment Fine,1,500,500,Overdue from 2026-01
+47,12,RENT01,Monthly Rent 2026-02,1,8500,8500,
+48,12,ELEC01,Electricity 200 units,200,3.5,700,Meter 3200→3400
+49,12,WATER01,Water 9 units,9,80,720,
+50,12,INET01,Internet (Fixed Monthly),1,440,440,
+51,12,MAINT01,Maintenance / Repair Charge,1,3200,3200,Scheduled repair work
+52,13,RENT01,Monthly Rent 2026-02,1,8500,8500,
+53,13,ELEC01,Electricity 220 units,220,3.5,770,Meter 4000→4220
+54,13,WATER01,Water 10 units,10,80,800,
+55,13,INET01,Internet (Fixed Monthly),1,440,440,
+56,14,RENT01,Monthly Rent 2026-02,1,4500,4500,
+57,14,ELEC01,Electricity 100 units,100,3.5,350,Meter 0→100
+58,14,WATER01,Water 4 units,4,80,320,
+59,14,INET01,Internet (Fixed Monthly),1,440,440,
+60,15,RENT01,Monthly Rent 2026-02,1,4500,4500,
+61,15,ELEC01,Electricity 100 units,100,3.5,350,Meter 500→600
+62,15,WATER01,Water 4 units,4,80,320,
+63,15,INET01,Internet (Fixed Monthly),1,440,440,
+64,16,RENT01,Monthly Rent 2026-03,1,4500,4500,
+65,16,ELEC01,Electricity 120 units,120,3.5,420,Meter 1320→1440
+66,16,WATER01,Water 5 units,5,80,400,
+67,16,INET01,Internet (Fixed Monthly),1,440,440,
+68,17,RENT01,Monthly Rent 2026-03,1,4500,4500,
+69,17,ELEC01,Electricity 120 units,120,3.5,420,Meter 1020→1140
+70,17,WATER01,Water 4 units,4,80,320,
+71,17,INET01,Internet (Fixed Monthly),1,440,440,
+72,18,RENT01,Monthly Rent 2026-03,1,6000,6000,
+73,18,ELEC01,Electricity 160 units,160,3.5,560,Meter 2300→2460
+74,18,WATER01,Water 7 units,7,80,560,
+75,18,INET01,Internet (Fixed Monthly),1,440,440,
+76,18,FINE01,Late Payment Fine,1,500,500,Overdue from 2026-01 and 2026-02
+77,19,RENT01,Monthly Rent 2026-03,1,6000,6000,
+78,19,ELEC01,Electricity 140 units,140,3.5,490,Meter 1780→1920
+79,19,WATER01,Water 6 units,6,80,480,
+80,19,INET01,Internet (Fixed Monthly),1,440,440,
+81,20,RENT01,Monthly Rent 2026-03,1,6000,6000,
+82,20,ELEC01,Electricity 140 units,140,3.5,490,Meter 1480→1620
+83,20,WATER01,Water 6 units,6,80,480,
+84,20,INET01,Internet (Fixed Monthly),1,440,440,
+85,21,RENT01,Monthly Rent 2026-03,1,8500,8500,
+86,21,ELEC01,Electricity 200 units,200,3.5,700,Meter 3400→3600
+87,21,WATER01,Water 9 units,9,80,720,
+88,21,INET01,Internet (Fixed Monthly),1,440,440,
+89,22,RENT01,Monthly Rent 2026-03,1,8500,8500,
+90,22,ELEC01,Electricity 220 units,220,3.5,770,Meter 4220→4440
+91,22,WATER01,Water 10 units,10,80,800,
+92,22,INET01,Internet (Fixed Monthly),1,440,440,
+93,22,MAINT01,Maintenance / Repair Charge,1,3200,3200,Scheduled repair work
+94,23,RENT01,Monthly Rent 2026-03,1,4500,4500,
+95,23,ELEC01,Electricity 100 units,100,3.5,350,Meter 100→200
+96,23,WATER01,Water 4 units,4,80,320,
+97,23,INET01,Internet (Fixed Monthly),1,440,440,
+98,24,RENT01,Monthly Rent 2026-03,1,4500,4500,
+99,24,ELEC01,Electricity 100 units,100,3.5,350,Meter 600→700
+100,24,WATER01,Water 4 units,4,80,320,
+101,24,INET01,Internet (Fixed Monthly),1,440,440,
+102,25,RENT01,Monthly Rent 2026-03,1,4500,4500,
+103,25,ELEC01,Electricity 100 units,100,3.5,350,Meter 0→100
+104,25,WATER01,Water 5 units,5,80,400,
+105,25,INET01,Internet (Fixed Monthly),1,440,440,
+106,26,RENT01,Monthly Rent 2026-03,1,6000,6000,
+107,26,ELEC01,Electricity 140 units,140,3.5,490,Meter 0→140
+108,26,WATER01,Water 6 units,6,80,480,
+109,26,INET01,Internet (Fixed Monthly),1,440,440,
+110,27,RENT01,Monthly Rent 2026-03,1,4500,4500,
+111,27,ELEC01,Electricity 120 units,120,3.5,420,Meter 0→120
+112,27,WATER01,Water 5 units,5,80,400,
+113,27,INET01,Internet (Fixed Monthly),1,440,440,
+114,28,RENT01,Monthly Rent 2026-03,1,8500,8500,
+115,28,ELEC01,Electricity 200 units,200,3.5,700,Meter 0→200
+116,28,WATER01,Water 9 units,9,80,720,
+117,28,INET01,Internet (Fixed Monthly),1,440,440,
+118,29,RENT01,Monthly Rent 2026-03,1,6000,6000,
+119,29,ELEC01,Electricity 140 units,140,3.5,490,Meter 0→140
+120,29,WATER01,Water 6 units,6,80,480,
+121,29,INET01,Internet (Fixed Monthly),1,440,440,

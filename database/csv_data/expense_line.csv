@@ -1,0 +1,52 @@
+expense_line_id,expense_no,item_name,quantity,unit_price,extended_price
+1,1,PVC Pipe 1 inch,5,120,600
+2,1,Pipe Fittings Set,2,350,700
+3,1,Labour – Plumber,1,1900,1900
+4,2,Pipe Repair Kit,2,300,600
+5,2,Silicone Sealant,4,50,200
+6,2,Labour – Plumber,1,2000,2000
+7,3,Cleaning Solution,5,100,500
+8,3,Mop & Bucket Set,3,120,360
+9,3,Labour – Cleaner,1,940,940
+10,4,LED Light Bulb 18W,10,80,800
+11,4,Electrical Switch Set,5,120,600
+12,4,Labour – Electrician,1,1800,1800
+13,5,A4 Paper Ream,5,90,450
+14,5,Ballpoint Pens Box,2,80,160
+15,5,File Folders,4,30,120
+16,5,Stapler,1,220,220
+17,6,Wall Paint – White,10,180,1800
+18,6,Roller Brush Set,3,120,360
+19,6,Labour – Painter,2,1200,2400
+20,6,Masking Tape,6,40,240
+21,6,Primer,2,400,800
+22,7,Disinfectant,4,120,480
+23,7,Microfiber Cloths Pack,3,80,240
+24,7,Labour – Cleaner,1,1080,1080
+25,8,Door Lock Set,2,350,700
+26,8,Door Handle,3,280,840
+27,8,Labour – Carpenter,1,2000,2000
+28,8,Hinge Set,4,80,320
+29,8,Wood Filler,5,68,340
+30,9,Garden Soil,10,80,800
+31,9,Fertilizer,5,100,500
+32,9,Labour – Gardener,2,1200,2400
+33,9,Plant Seeds Mix,1,800,800
+34,10,A4 Paper Ream,3,90,270
+35,10,Ink Cartridge,2,280,560
+36,10,Correction Fluid,4,30,120
+37,11,CCTV Camera,2,1200,2400
+38,11,Cable UTP Cat6 (m),100,12,1200
+39,11,Labour – Electrician,1,1400,1400
+40,12,Ceramic Tiles,10,150,1500
+41,12,Tile Adhesive,3,180,540
+42,12,Labour – Tiler,1,1560,1560
+43,13,Cleaning Solution,5,100,500
+44,13,Trash Bags Box,2,150,300
+45,13,Labour – Cleaner,1,1000,1000
+46,14,PVC Pipe 3/4 inch,5,80,400
+47,14,Faucet Set,2,450,900
+48,14,Labour – Plumber,1,1700,1700
+49,15,Lawn Grass Seed,5,120,600
+50,15,Garden Hose (m),20,40,800
+51,15,Labour – Gardener,2,700,1400

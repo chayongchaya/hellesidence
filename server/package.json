@@ -1,0 +1,19 @@
+{
+  "name": "hellesidence-server",
+  "version": "2.0.0",
+  "description": "Hellesidence Dormitory Management System - Backend",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "winston": "^3.19.0",
+    "zod": "^3.23.8"
+  }
+}

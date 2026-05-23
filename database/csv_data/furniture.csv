@@ -1,0 +1,9 @@
+item_id,name,category,default_price
+1,Bed Frame,Bedroom,5000
+2,Study Desk,Office,2500
+3,Wardrobe,Bedroom,4000
+4,Air Conditioner,Electrical,15000
+5,Refrigerator,Electrical,8000
+6,Water Heater,Bathroom,3000
+7,Sofa,Living Room,6000
+8,Television,Electronic,10000

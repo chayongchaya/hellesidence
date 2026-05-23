@@ -1,0 +1,17 @@
+room_no,room_type_id,floor,monthly_price,status
+101,1,1,4500,Occupied
+102,1,1,4500,Occupied
+103,1,1,4500,Occupied
+104,1,1,4500,Occupied
+105,1,1,4500,Occupied
+106,1,1,4500,Maintenance
+201,2,2,6000,Occupied
+202,2,2,6000,Occupied
+203,2,2,6000,Occupied
+204,2,2,6000,Occupied
+205,2,2,6000,Occupied
+301,3,3,8500,Occupied
+302,3,3,8500,Occupied
+303,3,3,8500,Occupied
+401,1,4,4500,Occupied
+402,1,4,4500,Occupied
