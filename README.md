@@ -118,11 +118,6 @@ Six analytical report functions are implemented as PostgreSQL stored functions a
 ### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
 
-## Submission
-
-This project is submitted as part of CPE241 — Database Systems
-Semester 2/2025 · King Mongkut's University of Technology Thonburi (KMUTT)
-
 ### 1. Unzip and enter the project folder
 
 ```
@@ -206,3 +201,10 @@ npm run dev                 # runs on http://localhost:5173
 | Database not seeding | Run `docker compose down -v` to wipe the volume, then `docker compose up --build` again |
 | API connection error from client | Check that `CORS_ORIGIN` in the server environment matches your client URL |
 | `pg_isready` fails on startup | The server waits for a health check on the database — wait a few seconds and retry |
+
+
+
+## Submission
+
+This project is submitted as part of CPE241 — Database Systems
+Semester 2/2025 · King Mongkut's University of Technology Thonburi (KMUTT)
