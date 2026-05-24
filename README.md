@@ -146,7 +146,7 @@ Docker will automatically:
 | Service  | URL |
 |----------|-----|
 | Frontend | http://localhost:5173 |
-| API      | http://localhost:4000 |
+| API      | http://localhost:4000/api/v1 |
 | Database | `localhost:15433` — user: `root` / password: `root` / db: `hellesidence_db` |
 
 ### 4. Stop
