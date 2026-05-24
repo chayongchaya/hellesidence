@@ -118,6 +118,11 @@ Six analytical report functions are implemented as PostgreSQL stored functions a
 ### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
 
+## Submission
+
+This project is submitted as part of CPE241 — Database Systems
+Semester 2/2025 · King Mongkut's University of Technology Thonburi (KMUTT)
+
 ### 1. Unzip and enter the project folder
 
 ```
